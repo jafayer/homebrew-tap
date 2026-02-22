@@ -1,27 +1,28 @@
 class NutritionRs < Formula
   desc "A CLI for flexible plaintext nutrition tracking"
   homepage "https://github.com/jafayer/nutrition-rs"
-  version "0.1.0"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.0/nutrition_rs-aarch64-apple-darwin.tar.xz"
-      sha256 "0e0e269418020e31d2a7577dd830f2b1f80c4f2849e2c5d04feb00367f87e713"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.2/nutrition_rs-aarch64-apple-darwin.tar.xz"
+      sha256 "0cefb28ed30728a6dfcb2796e0433f8097f95ca06a8338ec15037b6ae0f4bd23"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.0/nutrition_rs-x86_64-apple-darwin.tar.xz"
-      sha256 "2ca01d4b90a32ef279ac0e9f624d6bec9c5a8914acc7a4c2505716d03e0cabb0"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.2/nutrition_rs-x86_64-apple-darwin.tar.xz"
+      sha256 "34abe955eed2538050ba34c3ad2ec752edd19b363915f150aa7deded459ba5c9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.0/nutrition_rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3c3598fcfaff5f2160ce52cd851e0ccdb6d6806cbfa792d9c08333d053d4a67e"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.2/nutrition_rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7758151e1233495e7a7f7a52fb644e34f55b3c161fd49bb5eb2864c6072ee468"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.0/nutrition_rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "296164d937f6b5eaecb6a2ba81d0bd5f3ae146c64f56a03821d1d7982b1d674b"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.2/nutrition_rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "16ee041a0081629789581a5dc1b01647f60cca56e78e2df163d56e1a8aa4ec99"
     end
   end
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
