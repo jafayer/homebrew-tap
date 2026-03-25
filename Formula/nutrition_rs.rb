@@ -1,25 +1,25 @@
 class NutritionRs < Formula
   desc "A CLI for flexible plaintext nutrition tracking"
   homepage "https://github.com/jafayer/nutrition-rs"
-  version "0.1.3"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.3/nutrition_rs-aarch64-apple-darwin.tar.xz"
-      sha256 "4f51f8a9e5e6d26fc7c55c237316a8e586611af0465aecf40595822ce1287b90"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.2.0/nutrition_rs-aarch64-apple-darwin.tar.xz"
+      sha256 "f4f84de64c29f5363d657b9f21db0471203bbb4b73960e961aaa93a95e952d06"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.3/nutrition_rs-x86_64-apple-darwin.tar.xz"
-      sha256 "2cccabfd00918544fb681e4ae889e2efd6f4a76c95a218946d6eeb476f3d977b"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.2.0/nutrition_rs-x86_64-apple-darwin.tar.xz"
+      sha256 "ff48cbe164493073580f662a1c70b110dcd4f96d9d10cdcee2fc35e508396fcf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.3/nutrition_rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1e04d53d337bdee1124112abd0377e48076268c5d572af20651e052171c62a8c"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.2.0/nutrition_rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a6330928caddf0231ad02ca70ac70aa84b97d33bb577a913fc944ea0e4e303e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.1.3/nutrition_rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "39278a370d8b7534bfa49394cca7f493f6c856e263b1d7b58035dc5d83bc451b"
+      url "https://github.com/jafayer/nutrition-rs/releases/download/v0.2.0/nutrition_rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "10fd3e0c31c7e5da338f6c5381a24e3d4b99a6e2376769ce89025b098ea2242d"
     end
   end
   license "MIT"
